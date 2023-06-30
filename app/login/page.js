@@ -1,10 +1,19 @@
-import Form from "@/components/form";
+import FormLogin from "@/components/form-login";
+import styles from "@/styles/loginPage.module.css";
 
 function Login() {
   return (
-    <>
-      <Form />
-    </>
+    <main className={styles.wrapperLogin}>
+      <figure className={styles.wrapperImage}>
+        <img
+          className={styles.imgHeader}
+          src="/images/logo-udea.png"
+          alt="Logo de la Universidad de Antioquia"
+          loading="lazy"
+        />
+      </figure>
+      <FormLogin />
+    </main>
   );
 }
 
