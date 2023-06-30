@@ -15,8 +15,14 @@ function FormLogin() {
 
   evt.preventDefault();
 
-  console.log("Username: " + inputs.username);
-  console.log("Password: " + inputs.password);
+  const username = inputs.username;
+  const password = inputs.password;
+
+  console.log(username.length, password.length);
+
+  if(username.length == 0 ||  password.length == 0) {
+   alert("El usuario y/o contraseña no pueden estar incompletos")
+  }
  }
 
  return ( 
