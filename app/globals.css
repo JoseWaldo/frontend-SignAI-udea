@@ -3,6 +3,7 @@
   --white-color: #fff;
   --gray-color: #555;
   --gray-dark-color: #777;
+  --box-shadow: 4px 4px 23px 0px rgba(0, 0, 0, 0.30);
 }
 
 * {
