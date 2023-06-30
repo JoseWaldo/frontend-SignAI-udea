@@ -14,7 +14,7 @@ function FormLogin() {
     </label>
    <input className={styles.inputForm} type="password" id="passwordInput"/>
    <button className={styles.button} type="submit">Ingresar</button>
-   <Link className={styles.link} href="#">Registrarse</Link>
+   <Link className={styles.link} href="/register">Registrarse</Link>
   </form>
  );
 }
