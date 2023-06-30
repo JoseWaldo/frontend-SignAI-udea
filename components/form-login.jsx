@@ -2,26 +2,14 @@
 
 import Link from "next/link";
 import styles from "@/styles/formLogin.module.css"
-import { useState } from "react";
+import useForm from "@/hooks/useForm";
 
 function FormLogin() {
 
- const [inputs, setInputs] = useState({
-  username: "",
-  password: "",
- });
-
- const handleChange = (evt) => {
-  const { target } = evt;
-  const { name, value } = target;
-
-  const newValues = {
-   ...inputs,
-   [name]: value,
-  };
-
-  setInputs(newValues);
- }
+ const { handleChange, inputs } = useForm({
+   username: "",
+   password: "",
+  })
 
  const handleSubmit = (evt) => {
 
