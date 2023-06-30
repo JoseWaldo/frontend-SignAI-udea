@@ -63,3 +63,8 @@
  color: var(--green-color);
  text-decoration: none;
 }
+
+.msgError {
+ font-size: .8rem;
+ color: var(--red-color);
+}
