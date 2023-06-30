@@ -12,7 +12,7 @@ export default function Home() {
         />
       </figure>
       <h1 className={styles.title}>Bienvenido a SignAI</h1>
-      <Link href={""} className={styles.button}>
+      <Link href="/login" className={styles.button}>
         Iniciar Sesion
       </Link>
     </main>
