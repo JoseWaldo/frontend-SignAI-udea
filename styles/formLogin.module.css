@@ -33,6 +33,10 @@
  margin-top: -.8rem;
 }
 
+.inputForm::placeholder {
+ opacity: .4;
+}
+
 .button {
  padding: .8rem;
  font-family: inherit;
