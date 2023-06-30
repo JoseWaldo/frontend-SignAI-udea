@@ -3,15 +3,18 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <figure>
+    <main className={styles.main}>
+      <figure className={styles.wrapperImg}>
         <img
-          src="/images/logo-udea.pngs"
+          className={styles.img}
+          src="/images/logo-udea.png"
           alt="Logo de la Universidad de Antioquia"
-        ></img>
+        />
       </figure>
-      <h1>Bienvenido a SignAI</h1>
-      <Link href={""}>Iniciar Sesion</Link>
+      <h1 className={styles.title}>Bienvenido a SignAI</h1>
+      <Link href={""} className={styles.button}>
+        Iniciar Sesion
+      </Link>
     </main>
   );
 }

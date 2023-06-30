@@ -1,8 +1,8 @@
 :root {
-  --green-color: "#026937";
-  --white-color: "#fff";
-  --gray-color: "#555";
-  --gray-dark-color: "#777";
+  --green-color: #026937;
+  --white-color: #fff;
+  --gray-color: #555;
+  --gray-dark-color: #777;
 }
 
 * {
