@@ -6,9 +6,10 @@ const sendData = async (data, url) => {
       headers: { "Content-type": "application/json; charset=UTF-8" },
     });
     const json = await response.json();
-    console.log(json);
+    if (!response.ok) throw new Error(json.detail);
+    return { ok: true, message: json.message };
   } catch (err) {
-    console.log(err);
+    return { ok: false, message: err.message };
   }
 };
 
