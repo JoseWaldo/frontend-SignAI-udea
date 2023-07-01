@@ -17,7 +17,7 @@ function FormRegister() {
 
  const [msgError, setMsgError] = useState("");
 
- const handleSubmit = (evt) => {
+ const handleSubmit = async (evt) => {
 
   evt.preventDefault();
 
@@ -36,7 +36,12 @@ function FormRegister() {
   } else if(!isCorrectPswd) { 
    messageError = messagePswd 
   } else {
-   sendData({ username, password, email }, "http://127.0.0.1:8000/users");
+   const {ok, message} = await sendData({ username, password, email }, "http://127.0.0.1:8000/users");
+   if(ok) {
+    alert(message);
+    return;
+   }
+   messageError = message;
   }
 
   setMsgError(messageError);
